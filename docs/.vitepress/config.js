@@ -47,10 +47,21 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '慕课-RAG', link: '/慕课-RAG/chapter1/项目介绍' }
+      { text: '慕课-RAG', link: '/慕课-RAG/chapter1/项目介绍' },
+      { text: 'Dify应用', link: '/Dify应用/1' }
     ],
 
     sidebar: {
+      '/Dify应用/': [
+        {
+          text: 'Dify应用开发',
+          collapsible: true,
+          items: [
+            { text: 'RAG企业私有知识库建设', link: '/Dify应用/1' },
+            { text: 'Dify高级应用开发', link: '/Dify应用/2' }
+          ]
+        }
+      ],
       '/慕课-RAG/': [
         {
           text: '第一部分 · RAG基础入门',
