@@ -96,7 +96,7 @@ python main.py
 indexer = FAISSIndexConstructionModule(
     index_path="./my_faiss_index",
     dimension=768,
-    model_name="BAAI/bge-base-zh-v1.5",
+    model_name="BAAI/bge-慕课-RAG-zh-v1.5",
     index_type="HNSW"
 )
 

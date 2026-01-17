@@ -26,7 +26,7 @@ current_device = 'gpu'
 performance_history = []
 
 # 模型ID常量
-MODEL_ID = "iic/nlp_gte_sentence-embedding_chinese-base"
+MODEL_ID = "iic/nlp_gte_sentence-embedding_chinese-慕课-RAG"
 
 # 初始化 embedding pipeline
 def init_model():

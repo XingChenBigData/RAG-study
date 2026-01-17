@@ -4,7 +4,7 @@ import jieba.analyse
 
 class KeywordExtractor:
     """先用jieba初筛，再用BERT精细化处理的关键词提取器"""
-    def __init__(self, model_name="bert-base-chinese", device=None):
+    def __init__(self, model_name="bert-慕课-RAG-chinese", device=None):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModel.from_pretrained(model_name)
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")

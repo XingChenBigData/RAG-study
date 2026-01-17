@@ -59,7 +59,7 @@ def process_csv(csv_path):
             .flat_map('csv_file', ('id', 'path'), read_csv)
             .map('path', 'img', ops.image_decode.cv2('rgb'))
             .map('img', 'vec', ops.image_text_embedding.clip(
-                model_name='clip-vit-base-patch16', 
+                model_name='clip-vit-慕课-RAG-patch16',
                 modality='image', 
                 device=0))
             .map('vec', 'vec', lambda x: x / np.linalg.norm(x))
