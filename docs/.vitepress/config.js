@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'RAG全栈技术笔记',
   description: '从基础到精通，打造高精准AI应用',
   lang: 'zh-CN',
-  base: '/', // 使用根路径
+  base: '/RAG-study/', // 使用仓库名称作为 base 路径
   lastUpdated: true,
   ignoreDeadLinks: true,
 
@@ -62,7 +62,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-github-username/your-repo-name' }
+      { icon: 'github', link: 'https://github.com/XingChenBigData/RAG-study' }
     ],
 
     search: {
