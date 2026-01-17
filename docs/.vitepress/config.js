@@ -55,7 +55,7 @@ export default defineConfig({
           text: 'Chapter 7 · 项目架构设计',
           items: [
             { text: '项目介绍', link: '/base/chapter7/项目介绍' },
-            { text: '7-4 项目架构设计_ev-RAG流程', link: '/base/chapter7/7-4 项目架构设计_ev-RAG流程' }
+            { text: '7-4 项目架构设计_ev', link: '/base/chapter7/7-4 项目架构设计_ev' }
           ]
         }
       ]
