@@ -61,7 +61,10 @@ export default defineConfig({
         {
           text: 'Chapter 8 · RAG评估',
           items: [
-            { text: '8-2 RAG迭代的关键：评估_ev- 笔记', link: '/base/chapter8/8-2 RAG迭代的关键：评估_ev- 笔记' }
+            { text: '8-2 RAG迭代的关键：评估_ev- 笔记', link: '/base/chapter8/8-2 RAG迭代的关键：评估_ev- 笔记' },
+            { text: '8-3 RAG评估的三大步骤_ev- 笔记', link: '/base/chapter8/8-3 RAG评估的三大步骤_ev- 笔记' },
+            { text: '8-4 RAG评价神器：Ragas框架_ev- 笔记', link: '/base/chapter8/8-4 RAG评价神器：Ragas框架_ev- 笔记' },
+            { text: '8-5 实战：用Ragas评估制度问答模块的性能_ev- 笔记', link: '/base/chapter8/8-5 实战：用Ragas评估制度问答模块的性能_ev- 笔记' }
           ]
         }
       ]
