@@ -15,6 +15,7 @@ RAG（Retrieval-Augmented Generation）是一种结合了检索和生成的 AI �
 - **Chapter 1 项目介绍**：项目的整体介绍和学习路径
 - **Chapter 6 文档分块**：递归文本分块和语义智能分块技术
 - **Chapter 7 项目架构设计**：RAG 流程和项目架构设计
+- **Chapter 8 RAG评估**：RAG迭代的关键评估方法
 
 ## 技术栈
 
