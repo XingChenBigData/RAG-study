@@ -14,7 +14,18 @@ export default defineConfig({
 
   markdown: {
     lineNumbers: true,
-    mermaid: true,
+    mermaid: {
+      theme: 'default',
+      // 启用mindmap支持
+      directives: {
+        'mindmap': {
+          'rootMargin': '10px',
+          'rankSpacing': 20,
+          'nodeSpacing': 10,
+          'subTreeSep': 30
+        }
+      }
+    },
     math: true,
     image: {
       lazyLoading: false
