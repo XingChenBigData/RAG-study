@@ -1,0 +1,30 @@
+chunking:
+  chunk_length: 512
+  language: zh
+  overlap: 50
+  strategy: traditional
+data:
+  data_location: ./data/upload/20250926
+milvus:
+  collection_name: Test_one
+  host: 127.0.0.1
+  index_device: cpu
+  index_name: IVF_FLAT
+  port: '19530'
+  replica_num: 1
+  vector_name: default
+multimodal:
+  clip_model: ViT-B/32
+  enable_image: false
+  image_formats:
+  - jpg
+  - jpeg
+  - png
+  - bmp
+search:
+  col_choice: hdbscan
+  reorder_strategy: distance
+  top_k: 20
+system:
+  insert_mode: overwrite
+  url_split: false

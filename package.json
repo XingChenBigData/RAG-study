@@ -1,0 +1,21 @@
+{
+  "name": "rag-fullstack-notes",
+  "version": "1.0.0",
+  "description": "RAG全栈技术从基础到精通，打造高精准AI应用",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "vitepress-plugin-image-viewer": "^1.1.6"
+  }
+}
