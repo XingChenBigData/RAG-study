@@ -3,7 +3,10 @@
 ## 项目简介
 
 本项目是一个关于 RAG（Retrieval-Augmented Generation）全栈技术的学习笔记，旨在帮助开发者从基础到精通掌握高精准 AI 应用的构建。
-
+## 代办
+- 夸克网盘：极客时间-AIOPS训练营/4.实战四：实现基于运维专家知识库故障排查Operator.mp4。 推荐理由：这节课工作相关。rag。链接：https://pan.quark.cn/s/c2d35fba2a7e
+- 观感一般。马士兵-AI大模型全链路实战/msb-AI实战工具课
+- 
 ## 内容结构
 
 项目文档位于 `docs/base` 目录下，包含以下主要内容：

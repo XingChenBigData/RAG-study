@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+import markmapPlugin from 'vitepress-plugin-markmap'
 
-export default defineConfig({
+export default withMermaid(
+  defineConfig({
   title: 'RAG全栈技术笔记',
   description: '从基础到精通，打造高精准AI应用',
   lang: 'zh-CN',
@@ -22,6 +25,7 @@ export default defineConfig({
   },
 
   vite: {
+    plugins: [markmapPlugin()],
     assetsInclude: ['**/*.PNG', '**/*.JPG', '**/*.JPEG', '**/*.GIF', '**/*.SVG']
   },
 
@@ -131,4 +135,19 @@ export default defineConfig({
       message: '基于 Apache-2.0 许可发布',
     },
   },
+  // Mermaid 全局配置
+  mermaid: {
+    theme: 'default',
+    darkMode: false,
+    config: {
+      fontFamily: 'Arial, sans-serif',
+      fontSize: 16,
+      lineHeight: 1.5,
+      themeVariables: {
+        edgeLabelBackground: '#ffffee',
+        fontSize: 16
+      }
+    }
+  },
 })
+)
