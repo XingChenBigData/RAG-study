@@ -52,7 +52,8 @@ export default withMermaid(
     nav: [
       { text: '首页', link: '/' },
       { text: '慕课-RAG', link: '/慕课-RAG/chapter1/项目介绍' },
-      { text: 'Dify应用', link: '/Dify应用/1' }
+      { text: 'Dify应用', link: '/Dify应用/1' },
+      { text: '西瓜老师', link: '/西瓜老师/代办' }
     ],
 
     sidebar: {
@@ -110,6 +111,15 @@ export default withMermaid(
                 { text: '8-5 实战：用Ragas评估制度问答模块的性能', link: '/慕课-RAG/chapter8/8-5 实战：用Ragas评估制度问答模块的性能_ev- 笔记' }
               ]
             }
+          ]
+        }
+      ],
+      '/西瓜老师/': [
+        {
+          text: '西瓜老师专栏',
+          collapsible: true,
+          items: [
+            { text: '代办事项', link: '/西瓜老师/代办' }
           ]
         }
       ]
