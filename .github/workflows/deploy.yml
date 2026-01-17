@@ -1,0 +1,50 @@
+name: Deploy VitePress Site to GitHub Pages
+
+on:
+  # 在推送到 main 分支时触发
+  push:
+    branches: [main]
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      # 允许访问 GitHub Pages
+      pages: write
+      # 允许检出代码
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # 确保获取完整的提交历史
+          fetch-depth: 0
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          # 使用 Node.js 18
+          node-version: 18
+          # 使用 npm 缓存
+          cache: npm
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build VitePress site
+        run: npm run build
+      
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 上传构建后的目录
+          path: docs/.vitepress/dist
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
