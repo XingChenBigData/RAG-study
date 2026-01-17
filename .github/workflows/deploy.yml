@@ -15,6 +15,8 @@ jobs:
       pages: write
       # 允许检出代码
       contents: read
+      # 允许生成 ID token
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
